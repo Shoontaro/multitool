@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<div id="svipe1">
+    @using (Ajax.BeginForm("Svipe", new AjaxOptions { UpdateTargetId = "svipeResult" }))
+    {
+        <input name="x" type="number" placeholder="x">
+        <input name="y" type="number" placeholder="y">
+        <input type="submit" class="btn btn-primary" value="Поменять местами">
+    }
+
+
+    <div id="svipeResult">
+        <p>Результат:</p>
+    </div>
+</div>
+
+<div id="expand2">
+    @using (Ajax.BeginForm("Expand", new AjaxOptions { UpdateTargetId = "expandResult" }))
+    {
+        <input name="num" type="text" placeholder="число">
+        
+        <input type="submit" class="btn btn-primary" value="Развернуть">
+    }
+
+
+    <div id="expandResult">
+        <p>Результат:</p>
+    </div>
+</div>
+
+<div id="hours3">
+    @using (Ajax.BeginForm("Hours", new AjaxOptions { UpdateTargetId = "HResult" }))
+    {
+        <input name="h" type="number" placeholder="часы">
+
+        <input type="submit" class="btn btn-primary" value="Высчитать градус">
+    }
+
+
+    <div id="HResult">
+        <p>Результат:</p>
+    </div>
+</div>
+
+<div id="count4">
+    @using (Ajax.BeginForm("Counting", new AjaxOptions { UpdateTargetId = "countResult" }))
+    {
+        <input name="N" type="number" placeholder="N">
+        <input name="X" type="number" placeholder="X">
+        <input name="Y" type="number" placeholder="Y">
+        <input type="submit" class="btn btn-primary" value="Найти числа">
+    }
+
+
+    <div id="countResult">
+        <p>Результат:</p>
+    </div>
+</div>
+
