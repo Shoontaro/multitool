@@ -2,6 +2,7 @@
     ViewBag.Title = "Home Page";
 }
 <div id="svipe1">
+    <p>1. Поменять местами значения двух переменных</p>
     @using (Ajax.BeginForm("Svipe", new AjaxOptions { UpdateTargetId = "svipeResult" }))
     {
         <input name="x" type="number" placeholder="x">
@@ -16,6 +17,8 @@
 </div>
 
 <div id="expand2">
+    <p>2. Получить трехзначное число, записанное теми же цифрами в обратном порядке.
+    </p>
     @using (Ajax.BeginForm("Expand", new AjaxOptions { UpdateTargetId = "expandResult" }))
     {
         <input name="num" type="text" placeholder="число">
@@ -30,6 +33,7 @@
 </div>
 
 <div id="hours3">
+    <p>Задано время Н часов (ровно). Вычислить угол в градусах между часовой и минутной стрелками</p>
     @using (Ajax.BeginForm("Hours", new AjaxOptions { UpdateTargetId = "HResult" }))
     {
         <input name="h" type="number" placeholder="часы">
@@ -44,6 +48,7 @@
 </div>
 
 <div id="count4">
+    <p>Найти количество чисел меньших N, которые имеют простые делители X или Y</p>
     @using (Ajax.BeginForm("Counting", new AjaxOptions { UpdateTargetId = "countResult" }))
     {
         <input name="N" type="number" placeholder="N">
